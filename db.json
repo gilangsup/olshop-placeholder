@@ -1,0 +1,188 @@
+{
+  "productCategories": [
+    {
+      "id": 1,
+      "name": "Makanan",
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 2,
+      "name": "Minuman",
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "plu": "PDCT0000001",
+      "productCategoryId": 1,
+      "name": "Cheetos",
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 2,
+      "plu": "PDCT0000001",
+      "productCategoryId": "1",
+      "name": "Indomie",
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 3,
+      "plu": "PDCT0000001",
+      "productCategoryId": "1",
+      "name": "Air Mineral Aqua",
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    }
+  ],
+  "productVariants": [
+    {
+      "id": 1,
+      "productId": 2,
+      "imageUrl": "https://img.my-best.id/contents/e616955f63ba184df29f2855544d178e.png?q=70&lossless=0&w=400&h=250&fit=crop&s=caf48963f24e06868ca8564634d35eea",
+      "name": "Indomie Goreng Original",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 3000,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "imageUrl": "https://www.mirotakampus.com/resources/assets/images/product_images/1635071824.1549614717.indomiaceh.jpg",
+      "name": "Indomie Goreng Aceh",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 3200,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 3,
+      "productId": 1,
+      "imageUrl": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/11/16/a0e4132b-4673-415d-a66f-8e1afcfc1908.jpg",
+      "name": "Cheetos keju",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 3300,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 4,
+      "productId": 1,
+      "imageUrl": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/4/10/9c366071-2a9a-45f6-aff7-c0cb9bf3d76d.jpg",
+      "name": "Cheetos jagung",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 3400,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 5,
+      "productId": 3,
+      "imageUrl": "https://images.k24klik.com/product/large/apotek_online_k24klik_20211206100212359225_AQUA-AIR-MINERAL-1500ML.jpg",
+      "name": "Aqua",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 4000,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "id": 6,
+      "productId": 3,
+      "imageUrl": "https://media.monotaro.id/mid01/big/Perlengkapan%20Dapur%20%26%20Horeka/Minuman/Minuman%20Ringan/Crystalline%20Air%20Mineral%20Botol/4vP106080175-2.jpg",
+      "name": "Crystaline",
+      "code": "PDCT0000001",
+      "qty": 1000,
+      "price": 300,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    }
+  ],
+  "TransactionDetail": [
+    {
+      "id": 1,
+      "total_amount": "some comment",
+      "postId": 1
+    }
+  ],
+  "Transaction": [
+    {
+      "id": 1,
+      "transaction_no": 1,
+      "active": true,
+      "created_user": "OPERATOR",
+      "created_date": "2023-02-1 07:00:00",
+      "updated_user": "OPERATOR",
+      "updated_date": "2023-02-1 08:00:00"
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$99dqI4I6nDoDP6kpKGtI7.V.ZyTOsmzDDWZD0nXDupKKC6H/zbGdG",
+      "id": 1
+    },
+    {
+      "email": "oliviers@mail.com",
+      "password": "$2a$10$1A.9wh/83Cabmb5SnihDs.c8PzdSswOhe5AW.lzGpGCCx4Cotx.cC",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 2
+    },
+    {
+      "email": "gilang@gmail.com",
+      "password": "$2a$10$NLq10jLYIxPtBRmRIFhVTueenOpv4rW4lVRprawVFX1vsXKUAAOzq",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "gilang321@gmail.com",
+      "password": "$2a$10$e96ZsNtlWtOX7gEzpUPvwu4xCSrhQwVe5FH2nMvNahctuhkJiefoa",
+      "role": "costumer",
+      "id": 4
+    }
+  ]
+}
