@@ -1,4 +1,14 @@
 
+export interface ProductCategory {
+    id: number
+    name: string
+    active: boolean
+    created_user: string
+    created_date: string
+    updated_user: string
+    updated_date: string
+}
+
 export interface ProductVariant {
     id: number
     productId: number

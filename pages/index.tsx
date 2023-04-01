@@ -1,3 +1,4 @@
+import {useEffect} from 'react'
 import Navbar from "@/components/Navbar";
 import {
   Tooltip,
@@ -8,6 +9,10 @@ import {
   CartesianGrid,
   Line,
 } from "recharts";
+import { useCookies } from 'react-cookie';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
+import { getCurrentUserData } from 'stores/user/userSelector';
 
 const data = [
   { name: "Aprli", Register: 1000, Placement: 2000, Graduates: 1000 },
@@ -16,7 +21,24 @@ const data = [
   { name: "July", Register: 1000, Placement: 400, Graduates: 900 },
 ];
 
+
 export default function Home() {
+
+  const [cookies, setCookies] = useCookies(['userToken'])
+  const router = useRouter()
+  const currentUser = useSelector(getCurrentUserData)
+  
+
+  useEffect(() => {
+    if (!cookies.userToken) {
+      router.push("/login")
+    }
+    if (currentUser.role === 'costumer') {
+      router.push("/product")
+    }
+  }, [])
+  
+
   return (
     <div>
       <Navbar/>

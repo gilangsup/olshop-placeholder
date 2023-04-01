@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@reduxjs/toolkit": "^1.9.3",
     "@types/node": "18.15.10",
     "@types/react": "18.0.29",
     "@types/react-dom": "18.0.11",
@@ -24,12 +26,19 @@
     "react-cookie": "^4.1.1",
     "react-cookies": "^0.1.1",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.2",
     "recharts": "^2.5.0",
+    "redux-persist": "^6.0.0",
+    "reduxjs-toolkit-persist": "^7.2.1",
+    "swr": "^2.1.1",
     "tailwindcss": "^3.2.7",
     "typescript": "5.0.2"
   },
   "devDependencies": {
-    "json-server-auth": "^2.1.0"
+    "json-server-auth": "^2.1.0",
+    "prettier-plugin-tailwindcss": "^0.2.6"
   }
 }

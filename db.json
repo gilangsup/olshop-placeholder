@@ -2,7 +2,7 @@
   "productCategories": [
     {
       "id": 1,
-      "name": "Makanan",
+      "name": "Cemilan",
       "active": true,
       "created_user": "OPERATOR",
       "created_date": "2023-02-1 07:00:00",
@@ -17,6 +17,10 @@
       "created_date": "2023-02-1 07:00:00",
       "updated_user": "OPERATOR",
       "updated_date": "2023-02-1 08:00:00"
+    },
+    {
+      "name": "Snack",
+      "id": 4
     }
   ],
   "products": [
