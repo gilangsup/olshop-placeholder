@@ -2,11 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-yarn install
+```yarn install```
 
 ## For running json server 
 
-yarn json-server --watch db.json --port 3004
+```yarn json-server --watch db.json --port 3004```
 
 First, run the development server:
 
