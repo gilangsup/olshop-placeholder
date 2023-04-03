@@ -1,22 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useCookies } from 'react-cookie'
 import { BsFillCartCheckFill } from 'react-icons/bs'
 import { useSelector } from 'react-redux'
 import Link from 'next/link'
 import { getCurrentUserData } from 'stores/user/userSelector'
 import { pushToCart } from 'stores/cart/cartSelector'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
 
-    const [cookies, setCookies] = useCookies(['role'])
+    const [cookies, setCookies] = useCookies(['userToken'])
     const currentUser = useSelector(getCurrentUserData)
     const userCart = useSelector(pushToCart)
+    const router = useRouter()
 
     console.log('cart', userCart.length)
 
+    useEffect(() => {
+        if (!cookies.userToken) {
+            router.push("/login")
+        }
+
+    }, [])
+
     return (
         <div className="navbar bg-slate-700 text-white">
-            {currentUser.role === 'admin' ?
+            {currentUser?.role === 'admin' ?
                 <div className='container mx-auto '>
                     <div className="navbar-start">
                         <Link href="/" className="btn btn-ghost normal-case text-xl">OLShops</Link>
