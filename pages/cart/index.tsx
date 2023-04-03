@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { pushToCart } from 'stores/cart/cartSelector'
@@ -9,6 +10,7 @@ const Cart = () => {
 
   return (
     <div className='container mx-auto'>
+      <Link href="/product" className='text-2xl my-5'>Kembali Belanja</Link>
       <h1 className='text-4xl my-5'>Your Cart</h1>
       <div className='grid grid-cols-3 p-5'>
         {userCart.map((carts: any) => {

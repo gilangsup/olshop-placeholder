@@ -29,7 +29,6 @@ const Navbar = () => {
                     <div className="justify-end">
                         <button className="btn btn-square btn-ghost">
                             <BsFillCartCheckFill className='text-2xl' />
-                            <p className=' text-lg text-red-700 mb-5 bg-white rounded-full'>{userCart.length}</p>
                         </button>
                     </div>
                 </div> :
@@ -37,9 +36,13 @@ const Navbar = () => {
                     <div className="flex-1">
                         <Link href="/" className="btn btn-ghost normal-case text-xl">OLShop</Link>
                     </div>
+                    <div className="flex-1">
+                        <Link href="/product" className="btn btn-ghost normal-case text-xl">Belanja</Link>
+                    </div>
                     <div className="flex-none">
                         <button className="btn btn-square btn-ghost">
                             <Link href='cart'><BsFillCartCheckFill className='text-2xl' /></Link>
+                            <p className=' text-lg text-red-700 mb-5 bg-white rounded-full'>{userCart.length}</p>
                         </button>
                     </div>
                 </div>

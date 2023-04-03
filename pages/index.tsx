@@ -15,10 +15,10 @@ import { useSelector } from 'react-redux';
 import { getCurrentUserData } from 'stores/user/userSelector';
 
 const data = [
-  { name: "Aprli", Register: 1000, Placement: 2000, Graduates: 1000 },
-  { name: "May", Register: 2000, Placement: 1500, Graduates: 2000 },
-  { name: "June", Register: 3000, Placement: 1000, Graduates: 3000 },
-  { name: "July", Register: 1000, Placement: 400, Graduates: 900 },
+  { name: "Aprli", Aqua: 1000, Indomie: 2000, Snack: 1000 },
+  { name: "May", Aqua: 2000, Indomie: 1500, Snack: 2000 },
+  { name: "June", Aqua: 3000, Indomie: 1000, Snack: 3000 },
+  { name: "July", Aqua: 1000, Indomie: 400, Snack: 900 },
 ];
 
 
@@ -33,9 +33,7 @@ export default function Home() {
     if (!cookies.userToken) {
       router.push("/login")
     }
-    if (currentUser.role === 'costumer') {
-      router.push("/product")
-    }
+    
   }, [])
   
 
@@ -67,15 +65,15 @@ export default function Home() {
                   <Legend />
                   <CartesianGrid strokeDasharray="5 5" />
                   <Line
-                    dataKey="Register"
+                    dataKey="Aqua"
                     fill="#8884d8"
                   />
                   <Line
-                    dataKey="Placement"
+                    dataKey="Indomie"
                     fill="#8884d8"
                   />
                   <Line
-                    dataKey="Graduates"
+                    dataKey="Snack"
                     fill="#8884d8"
                   />
                 </LineChart>

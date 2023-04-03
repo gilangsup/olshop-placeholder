@@ -187,6 +187,11 @@
       "password": "$2a$10$e96ZsNtlWtOX7gEzpUPvwu4xCSrhQwVe5FH2nMvNahctuhkJiefoa",
       "role": "costumer",
       "id": 4
+    },
+    {
+      "email": "gilang1234@gmail.com",
+      "password": "$2a$10$iRLbBEiVIsue2DacmmEuA.Dc0qmJkKS/miPxzCmwkBNK9Mg18tFkS",
+      "id": 5
     }
   ]
 }
