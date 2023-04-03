@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## For running json server 
 
-```yarn json-server --watch db.json --port 3004```
+```yarn json-server-auth db.json --port 3004```
 
 First, run the development server:
 
